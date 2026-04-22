@@ -1,0 +1,12 @@
+#canvas{
+    background-color: grey;
+    border: black, 5px, solid;
+}
+.container{
+    justify-content: center;
+    display: flex;
+}
+
+h1{
+    text-align: center;
+}

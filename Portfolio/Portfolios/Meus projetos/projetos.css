@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #1B1B1E;
+    color: #F4F0EA;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 800px;
+    margin: 150px auto;
+    border-collapse: collapse;
+    border: #1B1B1E solid 2px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+tr {
+    border-bottom: #1B1B1E solid 2px;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+}
+
+th {
+    background-color: #1B1B1E;
+    color: #F4F0EA;
+    padding: 12px;
+    text-align: left;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #1B1B1E;
+    color: #F4F0EA;
+    height: 50px;
+    margin-top: auto;
+    font-size: 20px;
+    text-align: center;
+    
+}
+footer p{
+    margin: 10px;
+}
+html, body{
+    height: 100%;
+}
+
+
+

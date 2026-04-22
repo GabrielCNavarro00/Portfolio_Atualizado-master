@@ -1,0 +1,19 @@
+body{
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+#div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+#canvas{
+    background-color: white;
+}
