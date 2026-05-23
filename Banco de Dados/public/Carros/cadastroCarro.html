@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form method="post" action="/cadastroCarro">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="text" name="login" placeholder="Login">
+            <input type="password" name="senha" placeholder="Senha">
+            <input type="submit" value="Cadastrar">
+        </form>
+        <br>
+        <form method="get" action="/carrologin">
+            <input type="submit" value="Ir para Login">
+        </form>
+    </div>
+</body>
+</html>

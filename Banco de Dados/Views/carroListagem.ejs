@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Listagem de Carros</h1>
+        <% carros.forEach(function(carro){ %>
+            <div class="post">
+                <p><strong>Marca:</strong> <%= carro.marca %></p>
+                <p><strong>Modelo:</strong> <%= carro.modelo %></p>
+                <p><strong>Ano:</strong> <%= carro.ano %></p>
+                <% if(carro.esgotado){ %>
+                    <p class="esgotado">ESGOTADO</p>
+                <% } else { %>
+                    <p><strong>Quantidade:</strong> <%= carro.qtde %></p>
+                <% } %>
+                <hr>
+            </div>
+        <% }) %>
+        <form method="get" action="/gerenciarCarros">
+            <input type="submit" value="Gerenciar Carros">
+        </form>
+    </div>
+</body>
+</html>

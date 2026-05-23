@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Carros</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gerenciar Carros</h1>
+    <div class="box">
+        <h2>Cadastrar Carro</h2>
+        <form method="post" action="/novoCarro">
+            <input type="text" name="marca" placeholder="Marca">
+            <input type="text" name="modelo" placeholder="Modelo">
+            <input type="text" name="ano" placeholder="Ano">
+            <input type="number" name="qtde" placeholder="Quantidade">
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+    <br>
+    <div class="box">
+        <h2>Remover Carro</h2>
+        <form method="post" action="/removerCarro">
+            <input type="text" name="marca" placeholder="Marca">
+            <input type="text" name="modelo" placeholder="Modelo">
+            <input type="text" name="ano" placeholder="Ano">
+            <input type="submit" value="Remover">
+        </form>
+    </div>
+    <br>
+    <div class="box">
+        <h2>Atualizar Carro</h2>
+        <form method="post" action="/atualizarCarro">
+            <input type="text" name="marcanovo" placeholder="Marca Nova">
+            <input type="text" name="marca" placeholder="Marca Antiga">
+            <input type="text" name="modelonovo" placeholder="Modelo Novo">
+            <input type="text" name="modelo" placeholder="Modelo Antigo">
+            <input type="text" name="anonovo" placeholder="Ano Novo">
+            <input type="text" name="ano" placeholder="Ano Antigo">
+            <input type="number" name="qtdenovo" placeholder="Quantidade">
+            <input type="submit" value="Atualizar">
+        </form>
+    </div>
+    <br>
+    <div class="box">
+        <h2>Vender Carro</h2>
+        <form method="post" action="/venderCarro">
+            <input type="text" name="marca" placeholder="Marca">
+            <input type="text" name="modelo" placeholder="Modelo">
+            <input type="text" name="ano" placeholder="Ano">
+            <input type="submit" value="Vender">
+        </form>
+    </div>
+    <br>
+    <form method="get" action="/carroListagem">
+        <input type="submit" value="Ver Listagem">
+    </form>
+</div>
+</body>
+</html>
